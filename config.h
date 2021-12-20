@@ -64,10 +64,11 @@ static const char unknown_str[] = "n/a";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */
 static const struct arg args[] = {
-	{ cpu_perc,     "^c#434c5e^^b#434c5e^^c#bf616a^   %s%% ^b#434c5e^^c#3b4252^", NULL	      },
-	{ ram_used,     "^b#3b4252^^c#d08770^   %s ^c#434c5e^^b#3b4252^", NULL	      },
-	{ battery_perc, "^b#434c5e^^c#ebcb8b^  %4s%% ^c#3b4252^^b#434c5e^"        ,  "BAT0"    },
-	{ run_command,  "^b#3b4252^^c#a3be8c^  %4s%% ^c#434c5e^^b#3b4252^", "pamixer --get-volume" },
-	{ keymap,       "^b#434c5e^^c#b48ead^    %s ^c#3b4252^^b#434c5e^", " us es" }, 
-	{ datetime,     "^b#3b4252^^c#5e81ac^   %s ",           "%a., %b. %d %H:%M" },
+	{ cpu_perc,     " %s%%^",   NULL                   },
+	{ ram_used,     " %s^",     NULL                   },
+	{ battery_perc, " %4s%%^",  "BAT0"                 },
+	{ run_command,  " %4s%%^",  "pamixer --get-volume" },
+	{ wifi_essid,   " %s^",     "wlan0"                },
+	{ keymap,       " %s^",     NULL                   }, 
+	{ datetime,     " %s",      "%H:%M"                },
 };
