@@ -66,8 +66,8 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	{ cpu_perc,     " %s%%^",   NULL                   },
 	{ ram_used,     " %s^",     NULL                   },
-	{ battery_perc, " %4s%%^",  "BAT0"                 },
-	{ run_command,  " %4s%%^",  "pamixer --get-volume" },
+	{ battery_perc, " %s%%^",  "BAT0"                 },
+	{ run_command,  " %s^",    "get_volume"           },
 	{ wifi_essid,   " %s^",     "wlan0"                },
 	{ keymap,       " %s^",     NULL                   }, 
 	{ datetime,     " %s",      "%H:%M"                },
