@@ -64,10 +64,10 @@ static const char unknown_str[] = "n/a";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */
 static const struct arg args[] = {
-	{ cpu_perc,     " %s%%^", NULL         },
-	{ ram_used,     " %s^",   NULL         },
-	{ run_command,  " %s%^",  "get_volume" },
-    { netspeed_rx,  " %s^",   "enp0s31f6"  },
-	{ keymap,       " %s^",   NULL         }, 
-	{ datetime,     " %s",    "%H:%M"      },
+	{ cpu_perc,     " %s%%^", NULL              },
+	{ ram_used,     " %s^",   NULL              },
+	{ run_command,  " %s%^",  "get_volume"      },
+    { netspeed_rx,  " %s^",   "enp0s31f6"       },
+	{ keymap,       " %s^",   NULL              }, 
+	{ datetime,     " %s",    "%d.%m.%y, %H:%M" },
 };
